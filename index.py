@@ -13,7 +13,10 @@ elif operand=="*":
     result =num1 * num2
     print("The answer is:",result)
 elif operand=="/":
-    result =num1/num2
-    print("The answer is:",result)
+    if num2 != 0:
+        result = num1 / num2
+        print("The answer is:", result)
+    else:
+        print("Error: Cannot divide by zero.")
 else :
     print("Please enter a valid operand")        
